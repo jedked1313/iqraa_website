@@ -1,15 +1,15 @@
 <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container py-5">
         <div class="row g-5">
-            <div class="col-lg-3 col-md-6">
-                <h4 class="text-white mb-3">وصول سريع</h4>
+            <div class="col">
+                <h4 class="text-white mb-3">رابط تهمك</h4>
                 <a class="btn btn-link" href="/">الصفحة الرئيسية</a>
                 <a class="btn btn-link" href="/about">عن الكلية</a>
                 <a class="btn btn-link" href="/contact">تواصل معنا</a>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <div class="col">
                 <h4 class="text-white mb-3">معلومات التواصل</h4>
-                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>السودان, الجزيرة, فداسي الحليمياب</p>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>السودان, الجزيرة, فداسي الحليماب</p>
                 <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+2499</p>
                 <p class="mb-2"><i class="fa fa-envelope me-3"></i><a href="mailto:info@Iqraa.edu.sd">info@Iqraa.edu.sd</a></p>
                 <div class="d-flex pt-2">

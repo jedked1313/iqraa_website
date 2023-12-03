@@ -5,8 +5,6 @@ use App\http\Controllers\IndexController;
 use App\http\Controllers\AboutController;
 use App\http\Controllers\ContactController;
 use App\http\Controllers\CoursesController;
-use App\http\Controllers\Error404Controller;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,4 +20,3 @@ Route::get('/', [IndexController::class,'index']);
 Route::get('/about', [AboutController::class,'index']);
 Route::get('/contact', [ContactController::class,'index']);
 Route::get('/courses', [CoursesController::class,'index']);
-Route::get('/error404', [Error404Controller::class,'index']);

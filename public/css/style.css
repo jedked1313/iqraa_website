@@ -303,6 +303,12 @@
     transform: scale(1.1);
 }
 
+/*** Status ***/
+@media (max-width: 991px){
+    .status{
+        border: none !important;
+    }
+}
 
 /*** Testimonial ***/
 .testimonial-carousel::before {

@@ -38,8 +38,23 @@
     <!-- Navbar -->
     @include('layouts.navbar')
 
-    <!-- Header -->
-    @include('layouts.header')
+    <!-- Start Header -->
+    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">عن الكلية</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white" href="/">الرئيسية</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="/about">عن الكلية</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
     
     <!-- About Start -->
     <div class="container-xxl py-5">
@@ -47,7 +62,7 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <img class="img-fluid position-absolute w-100 h-100" src="img/about.jpg" alt="" style="object-fit: cover;">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/about.png" alt="" style="object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp text-center" data-wow-delay="0.3s">
@@ -75,23 +90,7 @@
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
                             <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
-                            <p>تأهيل الطلاب علمياً وتربوياً لنيل الدرجات العلمية المختلفة.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-item text-center pt-3">
-                        <div class="p-4">
-                            <i class="fa fa-3x fa-globe text-primary mb-4"></i>
-                            <p>إجراء البحوث والدراسات ذات الصلة بالتنمية الاقتصادية والاجتماعية والصحية</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-item text-center pt-3">
-                        <div class="p-4">
-                            <i class="fa fa-3x fa-home text-primary mb-4"></i>
-                            <p>إعداد الطلاب كقيادات عامة فكرياً وذهنياً</p>
+                            <p>تأهيل الطلاب علمياً وتربوياً لنيل الدرجات العلمية المختلفة<br>`</p>
                         </div>
                     </div>
                 </div>
@@ -99,6 +98,22 @@
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
                             <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
+                            <p>إجراء البحوث والدراسات ذات الصلة بالتنمية الاقتصادية والاجتماعية والصحية</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa fa-users text-primary mb-4"></i>
+                            <p>إعداد الطلاب كقيادات عامة فكرياً وذهنياً<br>`</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-globe text-primary mb-4"></i>
                             <p>توطيد العلاقات بين الكلية ومؤسسات التعليم العالي والبحث العلمي داخل وخارج البلاد بغرض تبادل</p>
                         </div>
                     </div>
@@ -108,6 +123,88 @@
     </div>
     <!-- Service End -->
     
+    <!-- Word Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">كلمة العميد</h6>
+                <div class="testimonial-item text-center">
+                    <img class="testimonial-img border rounded-circle p-2 mx-auto mt-5 mb-3" src="img/testimonial-2.jpg">
+                    <h3 class="mb-3">ب.عثمان محمد الأمين مقبول </h3>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0 fs-4 lh-lg">قال تعالى : ( يرفع الله الذين آمنوا منكم والذين أوتوا العلم درجات)…نرحب بالطلاب والطالبات ونهنئهم على قبولهم بكلية اقرأ للعلوم والتكنولوجيا ونتمنى لهم إقامة طيبة موفقة بالكلية وان يصبحوا جميعا جزءاً فعالاً ومبدعاً في منظومة كلية إقرا. تهدف كلية إقرا للعلوم والتكنولوجيا لبناء جيل مبدع ومنتج ويتعلم إدارة الزمن لتحقيق الأهداف المرسومة له وفق الأنشطة التربوية الأكاديمية  في الكلية وذلك بتأهيل الطلاب لقيادة الفرق الخدمية والاجتماعية والصحية والبحثية والسلوك الحضاري لبناء بيئة اجتماعية صحيحة.نشكر طلابنا الأعزاء لاختيارهم هذه الكلية التي تلتمس طريقها مقتدية بالجامعات السودانية العريقة لتصبح جزءا  فعالا  في منظومة التعليم العالي بالسودان, إننا في كلية إقرأ نسعى إلى رسم الرؤى البناءة والخطط المستقبلية وفق نظرة ثاقبة للمساهمة في عملية التنمية وتحقيق الأهداف المرسومة ونتطلع لان تكون قمة متميزة في أساتذتها وطلابها وبنيتها التحتية</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Word End -->
+
+    <!-- Collage Gallary Start -->
+    <div class="container-xxl py-5 category">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">معرض الكلية</h6>
+                <h1 class="mb-5">صور من الكلية</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-7 col-md-6">
+                    <div class="row g-3">
+                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="img/cat-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="img/cat-2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="img/cat-5.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
+                    <a class="position-relative d-block h-100 overflow-hidden" href="">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/team-4.jpg" alt="" style="object-fit: cover;">
+                    </a>
+                </div>
+            </div>
+            <div class="mb-3"></div>
+            <div class="row g-3">
+                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
+                    <a class="position-relative d-block h-100 overflow-hidden" href="">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/team-4.jpg" alt="" style="object-fit: cover;">
+                    </a>
+                </div>
+                <div class="col-lg-7 col-md-6">
+                    <div class="row g-3">
+                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="img/cat-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="img/cat-2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="img/about.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Collage Gallary End -->
+
     <!-- Footer -->
     @include('layouts.footer')
     
