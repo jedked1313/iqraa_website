@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="utf-8">
-    <title>كلية إقرأ - المناهج</title>
+    <title>كلية إقرأ - البرامج الدراسية</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <!-- Title Icon -->
+    <link href="img/icon.png">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +39,7 @@
     @include('layouts.navbar')
 
     <!-- Start Header -->
-    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+    <div dir="ltr" class="container-fluid bg-primary py-5 mb-5 page-header">
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
@@ -67,85 +67,80 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="course-item bg-light">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/Medical.svg" alt="">
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 8px;">إقرأ المزيد</a>
-                            </div>
+                            <a href="/programdata">
+                                <img class="img-fluid" src="img/Medical.svg">
+                            </a>
                         </div>
                         <div class="text-center p-4 pb-0">
                             <h5 class="mb-4">بكالوريوس الطب والجراحة</h5>
                         </div>
                         <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>49 عدد الكورسات</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>3000 طالب</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i> 49 عدد الكورسات</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i> 3000 طالب</small>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="course-item bg-light">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/Pharmacist.svg" alt="">
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 8px;">إقرأ المزيد</a>
-                            </div>
+                            <a href="#">
+                                <img class="img-fluid" src="img/Pharmacist.svg" alt="">
+                            </a>
                         </div>
                         <div class="text-center p-4 pb-0">
                             <h5 class="mb-4">بكالوريوس الصيدلة</h5>
                         </div>
                         <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>49 عدد الكورسات</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2000 طالب</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i> 49 عدد الكورسات</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i> 2000 طالب</small>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="course-item bg-light">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/Laboratory.svg" alt="">
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 8px;">إقرأ المزيد</a>
-                            </div>
+                            <a href="#">
+                                <img class="img-fluid" src="img/Laboratory.svg" alt="">
+                            </a>
                         </div>
                         <div class="text-center p-4 pb-0">
                             <h5 class="mb-4">بكالوريوس المختبرات</h5>
                         </div>
                         <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>49 عدد الكورسات</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>1500 طالب</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i> 49 عدد الكورسات</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i> 1500 طالب</small>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="course-item bg-light">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/Finance.svg" alt="">
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 8px;">إقرأ المزيد</a>
-                            </div>
+                            <a href="#">
+                                <img class="img-fluid" src="img/Finance.svg" alt="">
+                            </a>
                         </div>
                         <div class="text-center p-4 pb-0">
                             <h5 class="mb-4">بكالوريوس الاقتصاد والدراسات المصرفية</h5>
                         </div>
                         <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>49 عدد الكورسات</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>1500 طالب</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i> 49 عدد الكورسات</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i> 1500 طالب</small>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="course-item bg-light">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/nursing.svg" alt="">
-                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 8px;">إقرأ المزيد</a>
-                            </div>
+                            <a href="#">
+                                <img class="img-fluid" src="img/nursing.svg" alt="">
+                            </a>
                         </div>
                         <div class="text-center p-4 pb-0">
                             <h5 class="mb-4">بكالوريوس التمريض</h5>
                         </div>
                         <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>49 عدد الكورسات</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>1500 طالب</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i> 49 عدد الكورسات</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i> 1500 طالب</small>
                         </div>
                     </div>
                 </div>

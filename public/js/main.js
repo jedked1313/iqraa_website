@@ -120,6 +120,21 @@ function animateValue(obj, start, end, duration) {
     window.requestAnimationFrame(step);
 }
 
+// program data toggle
+$('.program-buttons').on('click', function () {
+    $(this).addClass('active').siblings().removeClass('active');
+    document.querySelectorAll('.program-p').forEach(element => {
+        if(this.getAttribute('id') === element.getAttribute('id')){
+            element.classList.add('d-block');
+            element.classList.remove('d-none');
+        }else{
+            element.classList.add('d-none');
+            element.classList.remove('d-block');
+        }
+    });
+});
+
+// collage status 5925
 const obj1 = document.getElementById("counter-1");
 const obj2 = document.getElementById("counter-2");
 const obj3 = document.getElementById("counter-3");

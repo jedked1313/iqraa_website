@@ -11,9 +11,9 @@
                 <a href="/" class="nav-item nav-link">الصفحة الرئيسية</a>
                 <a href="/about" class="nav-item nav-link">عن الكلية</a>
                 <div class="nav-item dropdown">
-                    <a href="/courses" class="nav-link dropdown-toggle">البرامج الدراسية</a>
+                    <a href="/programs" class="nav-link dropdown-toggle">البرامج الدراسية</a>
                     <div class="dropdown-menu fade-down m-0">
-                        <a href="#" class="dropdown-item">الطب والجراحة</a>
+                        <a href="/programdata" class="dropdown-item">الطب والجراحة</a>
                         <a href="#" class="dropdown-item">الصيدلة</a>
                         <a href="#" class="dropdown-item">طب الأسنان</a>
                         <a href="#" class="dropdown-item">العلوم الإدارية</a>
@@ -22,7 +22,7 @@
                         <a href="#" class="dropdown-item">المختبرات</a>
                     </div>
                 </div>
-                <a href="#" class="nav-item nav-link">أخبار الكلية</a>
+                <a href="/news" class="nav-item nav-link">أخبار الكلية</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">الإدارات</a>
                     <div class="dropdown-menu fade-down m-0">

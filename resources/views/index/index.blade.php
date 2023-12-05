@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="utf-8">
@@ -40,17 +40,17 @@
     @include('layouts.navbar')
 
     <!-- Carousel Start -->
-    <div class="container-fluid p-0 mb-5">
+    <div dir="ltr" class="container-fluid p-0 mb-5">
         <div class="owl-carousel header-carousel position-relative">
             <div class="owl-carousel-item position-relative">
                 <img class="img-fluid" src="img/carousel-1.jpg" alt="">
                 <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
                     <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-sm-10 col-lg-8">
+                        <div class="row justify-content-center">
+                            <div dir="rtl" class="col-sm-10 col-lg-8">
                                 <h5 class="text-primary mb-3 animated slideInDown">كلية إقرأ للعلوم و التكنولوجيا</h5>
-                                <h1 class="display-3 text-white animated slideInDown">كلية إقرأ للعلوم و التكنولوجيا</h1>
-                                <p class="fs-5 text-white mb-4 pb-2">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.</p>
+                                <h1 class="display-3 text-white animated slideInDown">مكتبة كلية إقرأ</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">مكتبة علمية تشتمل على آلاف الكتب والبحوث العلمية و المراجع الطبية والعامة والمقررات العربية و الانجليزية, و يوجد بها بيئة مريحه جدا للدراسه و تخدم جميع التخصصات التي تُدرسها الكلية</p>
                                 <a href="#" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">إقرأ المزيد</a>
                             </div>
                         </div>
@@ -61,8 +61,8 @@
                 <img class="img-fluid" src="img/carousel-3.png" alt="">
                 <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
                     <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-sm-10 col-lg-8">
+                        <div class="row justify-content-center">
+                            <div dir="rtl" class="col-sm-10 col-lg-8">
                                 <h5 class="text-primary mb-3 animated slideInDown">كلية إقرأ للعلوم و التكنولوجيا</h5>
                                 <h1 class="display-3 text-white animated slideInDown">مستشفى كلية إقرأ</h1>
                                 <p class="fs-5 text-white mb-4 pb-2">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.</p>
@@ -82,7 +82,7 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <img class="img-fluid position-absolute w-100 h-100" src="img/about.png" alt="" style="object-fit: cover;">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/main.png" alt="" style="object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp text-center" data-wow-delay="0.3s">
@@ -92,19 +92,19 @@
                     <h5>مميزات الكلية</h5>
                     <div class="row gy-2 gx-4 mb-4 text-start">
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>كادر تدريسي متميّز</p>
+                            <p class="mb-0">كادر تدريسي متميّز<i class="fa fa-arrow-right text-primary me-2"></i></p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>بيئة دراسية جيدة</p>
+                            <p class="mb-0">بيئة دراسية جيدة<i class="fa fa-arrow-right text-primary me-2"></i></p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>شهادات معتمدة</p>
+                            <p class="mb-0">شهادات معتمدة<i class="fa fa-arrow-right text-primary me-2"></i></p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>قاعات دراسية مهيئة بأعلى مستوى</p>
+                            <p class="mb-0">قاعات دراسية مهيئة بأعلى مستوى<i class="fa fa-arrow-right text-primary me-2"></i></p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>مناهج وخطط دراسية متطورة</p>
+                            <p class="mb-0">مناهج وخطط دراسية متطورة<i class="fa fa-arrow-right text-primary me-2"></i></p>
                         </div>
                     </div>
                     <a class="btn btn-primary py-3 px-5 mt-2" href="/about">إقرأ المزيد</a>
@@ -155,7 +155,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn btn-primary w-25 animated slideInLeft m-auto mt-4">إقرأ المزيد</a>
+            <a href="/news" class="btn btn-primary w-25 animated slideInLeft m-auto mt-4">إقرأ المزيد</a>
         </div>
     </div>
     <!-- Team End -->
@@ -185,7 +185,7 @@
                 </div>
                 <div class="status col-lg-3 col-md-6 border-end border-start">
                     <span class="fa fa-graduation-cap fa-5x text-primary p-3"></span>
-                    <h1 id="counter-2">856</h1>
+                    <h1 id="counter-4">856</h1>
                     <h5>الخريجين</h5>
                 </div>
             </div>
@@ -194,7 +194,7 @@
     <!-- status End -->
 
     <!-- Testimonial Start -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div dir="ltr" class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="text-center">
                 <h6 class="section-title bg-white text-center text-primary px-3">أراء الطلاب</h6>
@@ -202,35 +202,43 @@
             </div>
             <div class="owl-carousel testimonial-carousel position-relative">
                 <div class="testimonial-item text-center">
-                    <img class="testimonial-img border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-1.jpg">
+                    <img class="testimonial-img border rounded-circle p-2 mx-auto mb-3" src="img/student-1.jpg">
+                    <h5 class="mb-0">عائدة محمود</h5>
+                    <p>برنامج طب الأسنان</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">كلية إقرأ جعلتني امر بالكثير من التجارب الحياتية و العملية والتي كنت شخصيتي</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="testimonial-img border rounded-circle p-2 mx-auto mb-3" src="img/student-2.jpg">
                     <h5 class="mb-0">أدن عمر</h5>
                     <p>برنامج طب الاسنان</p>
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">انا سعيدة جدا بدخولي الى كلية إقرا, يوجد بها بيئة دراسية جيدة</p>
+                        <p class="mb-0">انا سعيدة جدا بدخولي الى كلية إقرا, يوجد بها بيئة دراسية جيدة</p>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="testimonial-img border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-2.jpg">
+                    <img class="testimonial-img border rounded-circle p-2 mx-auto mb-3" src="img/student-3.jpg">
                     <h5 class="mb-0">معاذ البشير</h5>
                     <p>برنامج التمريض</p>
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">كلية جميلة جدا تحتوي علي العديد من الانشطة </p>
+                        <p class="mb-0">كلية جميلة جدا تحتوي علي العديد من الانشطة </p>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="testimonial-img border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-3.jpg">
+                    <img class="testimonial-img border rounded-circle p-2 mx-auto mb-3" src="img/student-4.jpg">
                     <h5 class="mb-0">ميعاد اباذر</h5>
                     <p>برنامج الصيدلة</p>
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">وجودي في كلية إقرا اتاح لي اكتشاف العديد من المهارات و الأنشطة</p>
+                        <p class="mb-0">وجودي في كلية إقرا اتاح لي اكتشاف العديد من المهارات و الأنشطة</p>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="testimonial-img border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-4.jpg">
+                    <img class="testimonial-img border rounded-circle p-2 mx-auto mb-3" src="img/student-5.jpg">
                     <h5 class="mb-0">فاطمة محمد</h5>
                     <p>برنامج المختبرات</p>
                     <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">الكلية لديها مميزات عن باقي الكليات يوجد فيها حرم الكلية كبير ومكان  أستراحة  الطلاب تحت الاشجار يعطي طاقة  ايجابية  وكل سمستر في زمنه المحدد.</p>
+                        <p class="mb-0">الكلية لديها مميزات عن باقي الكليات يوجد فيها حرم الكلية كبير ومكان  أستراحة  الطلاب تحت الاشجار يعطي طاقة  ايجابية  وكل سمستر في زمنه المحدد</p>
                     </div>
                 </div>
             </div>

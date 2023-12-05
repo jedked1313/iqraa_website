@@ -82,7 +82,7 @@
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     vertical-align: middle;
-    margin-left: 8px;
+    margin-right: 8px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -266,6 +266,7 @@
 .service-item {
     background: var(--light);
     transition: .5s;
+    height: 100%;
 }
 
 .service-item:hover {
@@ -273,9 +274,6 @@
     background: var(--primary);
 }
 
-.service-item * {
-    transition: .5s;
-}
 
 .service-item:hover * {
     color: var(--light) !important;

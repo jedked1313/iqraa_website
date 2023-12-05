@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="utf-8">
@@ -38,7 +38,7 @@
     @include('layouts.navbar')
 
     <!-- Start Header -->
-    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+    <div dir="ltr" class="container-fluid bg-primary py-5 mb-5 page-header">
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
@@ -70,7 +70,7 @@
                         <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
                             <i class="fa fa-map-marker-alt text-white"></i>
                         </div>
-                        <div class="ms-3">
+                        <div class="me-3">
                             <h5 class="text-primary">الموقع</h5>
                             <p class="mb-0">السودان ,ولاية الجزيرة, فداسي الحليماب</p>
                         </div>
@@ -79,7 +79,7 @@
                         <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
                             <i class="fa fa-phone-alt text-white"></i>
                         </div>
-                        <div class="ms-3">
+                        <div class="me-3">
                             <h5 class="text-primary">رقم الهاتف</h5>
                             <p class="mb-0">+2499</p>
                         </div>
@@ -88,7 +88,7 @@
                         <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
                             <i class="fa fa-envelope-open text-white"></i>
                         </div>
-                        <div class="ms-3">
+                        <div class="me-3">
                             <h5 class="text-primary">البريد الإلكتروني</h5>
                             <p class="mb-0">Iqraa@Iqraa.com</p>
                         </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="utf-8">
@@ -39,7 +39,7 @@
     @include('layouts.navbar')
 
     <!-- Start Header -->
-    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+    <div dir="ltr" class="container-fluid bg-primary py-5 mb-5 page-header">
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
@@ -62,7 +62,7 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <img class="img-fluid position-absolute w-100 h-100" src="img/about.png" alt="" style="object-fit: cover;">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/main.png" alt="" style="object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp text-center" data-wow-delay="0.3s">
@@ -90,7 +90,7 @@
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
                             <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
-                            <p>تأهيل الطلاب علمياً وتربوياً لنيل الدرجات العلمية المختلفة<br>`</p>
+                            <p>تأهيل الطلاب علمياً وتربوياً لنيل الدرجات العلمية المختلفة</p>
                         </div>
                     </div>
                 </div>
@@ -106,7 +106,7 @@
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
                             <i class="fa fa-3x fa fa-users text-primary mb-4"></i>
-                            <p>إعداد الطلاب كقيادات عامة فكرياً وذهنياً<br>`</p>
+                            <p>إعداد الطلاب كقيادات عامة فكرياً وذهنياً</p>
                         </div>
                     </div>
                 </div>
@@ -114,7 +114,7 @@
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
                             <i class="fa fa-3x fa-globe text-primary mb-4"></i>
-                            <p>توطيد العلاقات بين الكلية ومؤسسات التعليم العالي والبحث العلمي داخل وخارج البلاد بغرض تبادل</p>
+                            <p>توطيد العلاقات بين الكلية ومؤسسات التعليم العالي داخل وخارج البلاد بغرض تبادل الخبرات والتجارب</p>
                         </div>
                     </div>
                 </div>
@@ -129,8 +129,8 @@
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3">كلمة العميد</h6>
                 <div class="testimonial-item text-center">
-                    <img class="testimonial-img border rounded-circle p-2 mx-auto mt-5 mb-3" src="img/testimonial-2.jpg">
-                    <h3 class="mb-3">ب.عثمان محمد الأمين مقبول </h3>
+                    <img class="testimonial-img border rounded-circle p-2 mx-auto mt-1 mb-3" src="img/boss.jpeg">
+                    <h3 class="mb-3">ب.عثمان محمد الأمين </h3>
                     <div class="testimonial-text bg-light text-center p-4">
                         <p class="mb-0 fs-4 lh-lg">قال تعالى : ( يرفع الله الذين آمنوا منكم والذين أوتوا العلم درجات)…نرحب بالطلاب والطالبات ونهنئهم على قبولهم بكلية اقرأ للعلوم والتكنولوجيا ونتمنى لهم إقامة طيبة موفقة بالكلية وان يصبحوا جميعا جزءاً فعالاً ومبدعاً في منظومة كلية إقرا. تهدف كلية إقرا للعلوم والتكنولوجيا لبناء جيل مبدع ومنتج ويتعلم إدارة الزمن لتحقيق الأهداف المرسومة له وفق الأنشطة التربوية الأكاديمية  في الكلية وذلك بتأهيل الطلاب لقيادة الفرق الخدمية والاجتماعية والصحية والبحثية والسلوك الحضاري لبناء بيئة اجتماعية صحيحة.نشكر طلابنا الأعزاء لاختيارهم هذه الكلية التي تلتمس طريقها مقتدية بالجامعات السودانية العريقة لتصبح جزءا  فعالا  في منظومة التعليم العالي بالسودان, إننا في كلية إقرأ نسعى إلى رسم الرؤى البناءة والخطط المستقبلية وفق نظرة ثاقبة للمساهمة في عملية التنمية وتحقيق الأهداف المرسومة ونتطلع لان تكون قمة متميزة في أساتذتها وطلابها وبنيتها التحتية</p>
                     </div>
@@ -169,7 +169,7 @@
                 </div>
                 <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
                     <a class="position-relative d-block h-100 overflow-hidden" href="">
-                        <img class="img-fluid position-absolute w-100 h-100" src="img/team-4.jpg" alt="" style="object-fit: cover;">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/team-2.jpg" alt="" style="object-fit: cover;">
                     </a>
                 </div>
             </div>
@@ -177,7 +177,7 @@
             <div class="row g-3">
                 <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
                     <a class="position-relative d-block h-100 overflow-hidden" href="">
-                        <img class="img-fluid position-absolute w-100 h-100" src="img/team-4.jpg" alt="" style="object-fit: cover;">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/about.jpg" alt="" style="object-fit: cover;">
                     </a>
                 </div>
                 <div class="col-lg-7 col-md-6">
@@ -189,12 +189,12 @@
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
                             <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="img/cat-2.png" alt="">
+                                <img class="img-fluid" src="img/cat-5.jpg" alt="">
                             </a>
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
                             <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="img/about.png" alt="">
+                                <img class="img-fluid" src="img/cat-2.png" alt="">
                             </a>
                         </div>
                     </div>
