@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="{{ Config::get('app.locale') == 'ar' ? 'rtl' : 'ltr' }}">
 
 <head>
     <meta charset="utf-8">
-    <title>كلية إقرأ - البرامج الدراسية</title>
+    <title>{{ __('programs.page-title')}}</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -43,11 +43,11 @@
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
-                    <h1 class="display-3 text-white animated slideInDown">البرامج</h1>
+                    <h1 class="display-3 text-white animated slideInDown">{{ __('programs.programs')}}</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a class="text-white" href="/">الرئيسية</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="/about">البرامج</li>
+                            <li class="breadcrumb-item"><a class="text-white" href="/">{{ __('programs.home')}}</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="/about">{{ __('programs.programs')}}</li>
                         </ol>
                     </nav>
                 </div>
@@ -60,8 +60,8 @@
     <div class="container-xxl py-5 category">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">البرامج الدراسية</h6>
-                <h1 class="mb-5">انواع البرامج الدراسية</h1>
+                <h6 class="section-title bg-white text-center text-primary px-3">{{ __('programs.programs')}}</h6>
+                <h1 class="mb-5">{{ __('programs.programs-t')}}</h1>
             </div>
             <div class="row g-4 justify-content-center">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -72,11 +72,11 @@
                             </a>
                         </div>
                         <div class="text-center p-4 pb-0">
-                            <h5 class="mb-4">بكالوريوس الطب والجراحة</h5>
+                            <h5 class="mb-4">{{ __('programs.medicine') }}</h5>
                         </div>
                         <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i> 49 عدد الكورسات</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i> 3000 طالب</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i> 49 {{ __('programs.courses')}}</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i> 3000 {{ __('programs.students')}}</small>
                         </div>
                     </div>
                 </div>
@@ -88,11 +88,11 @@
                             </a>
                         </div>
                         <div class="text-center p-4 pb-0">
-                            <h5 class="mb-4">بكالوريوس الصيدلة</h5>
+                            <h5 class="mb-4">{{ __('programs.pharmacy') }}</h5>
                         </div>
                         <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i> 49 عدد الكورسات</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i> 2000 طالب</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i> 49 {{ __('programs.courses')}}</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i> 3000 {{ __('programs.students')}}</small>
                         </div>
                     </div>
                 </div>
@@ -104,11 +104,11 @@
                             </a>
                         </div>
                         <div class="text-center p-4 pb-0">
-                            <h5 class="mb-4">بكالوريوس المختبرات</h5>
+                            <h5 class="mb-4">{{ __('programs.laboratories') }}</h5>
                         </div>
                         <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i> 49 عدد الكورسات</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i> 1500 طالب</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i> 49 {{ __('programs.courses') }}</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i> 3000 {{ __('programs.students') }}</small>
                         </div>
                     </div>
                 </div>
@@ -120,11 +120,11 @@
                             </a>
                         </div>
                         <div class="text-center p-4 pb-0">
-                            <h5 class="mb-4">بكالوريوس الاقتصاد والدراسات المصرفية</h5>
+                            <h5 class="mb-4">{{ __('programs.eco') }}</h5>
                         </div>
                         <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i> 49 عدد الكورسات</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i> 1500 طالب</small>
+                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i> 49 {{ __('programs.courses') }}</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i> 3000 {{ __('programs.students') }}</small>
                         </div>
                     </div>
                 </div>
@@ -136,11 +136,11 @@
                             </a>
                         </div>
                         <div class="text-center p-4 pb-0">
-                            <h5 class="mb-4">بكالوريوس التمريض</h5>
+                            <h5 class="mb-4">{{ __('programs.nursing') }}</h5>
                         </div>
                         <div class="d-flex border-top">
-                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i> 49 عدد الكورسات</small>
-                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i> 1500 طالب</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i> 49 {{ __('programs.courses') }}</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i> 3000 {{ __('programs.students') }}</small>
                         </div>
                     </div>
                 </div>

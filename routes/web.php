@@ -7,6 +7,8 @@ use App\http\Controllers\ContactController;
 use App\http\Controllers\ProgramsController;
 use App\http\Controllers\NewsController;
 use App\http\Controllers\ProgramdataController;
+use App\http\Controllers\DepartmentsController;
+use App\http\Controllers\FacultyController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,3 +26,12 @@ Route::get('/contact', [ContactController::class,'index']);
 Route::get('/programs', [ProgramsController::class,'index']);
 Route::get('/news', [NewsController::class,'index']);
 Route::get('/programdata', [ProgramdataController::class,'index']);
+Route::get('/departments', [DepartmentsController::class,'index']);
+Route::get('/faculty', [FacultyController::class,'index']);
+
+Route::get('languageSelection/{locale}',function ($locale) {
+    if(in_array($locale,['ar','en'])){
+        session()->put('locale',$locale);
+    }
+    return redirect()->back();
+})->name('languageSelection');

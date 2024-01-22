@@ -135,13 +135,13 @@
     }
 
     .navbar .dropdown-menu.fade-down {
-        top: 100%;
+        top: 90%;
         transform: rotateX(-75deg);
         transform-origin: 0% 0%;
     }
 
     .navbar .nav-item:hover .dropdown-menu {
-        top: 100%;
+        top: 90%;
         transform: rotateX(0deg);
         visibility: visible;
         transition: .5s;
@@ -153,7 +153,7 @@
 /*** Header carousel ***/
 .header-carousel .owl-carousel-item {
     position: relative;
-    height: 50rem;
+    height: 40rem;
 }
 .header-carousel .owl-carousel-item img{
     height: 100%;
@@ -178,16 +178,16 @@
 
 .header-carousel .owl-nav {
     position: absolute;
-    top: 50%;
-    right: 8%;
-    transform: translateY(-50%);
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50% , 0);
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
 }
 
 .header-carousel .owl-nav .owl-prev,
 .header-carousel .owl-nav .owl-next {
-    margin: 7px 0;
+    margin: 0 0.5rem;
     width: 45px;
     height: 45px;
     display: flex;
@@ -270,7 +270,7 @@
 }
 
 .service-item:hover {
-    margin-top: -10px;
+    transform: translate(5px ,-5px);
     background: var(--primary);
 }
 
@@ -414,6 +414,7 @@
     font-weight: normal;
     text-transform: capitalize;
     transition: .3s;
+    width: 10rem;
 }
 
 .footer .btn.btn-link::before {
@@ -449,4 +450,9 @@
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+
+/* Departments page */
+.program-buttons{
+    width: calc(24% - .30rem);
 }

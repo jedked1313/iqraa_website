@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="{{ Config::get('app.locale') == 'ar' ? 'rtl' : 'ltr' }}">
 
 <head>
     <meta charset="utf-8">
-    <title>كلية إقرأ - تواصل معنا</title>
+    <title>{{ __('contact.page-title') }}</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -42,11 +42,11 @@
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
-                    <h1 class="display-3 text-white animated slideInDown">تواصل معنا</h1>
+                    <h1 class="display-3 text-white animated slideInDown">{{ __('contact.contact') }}</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a class="text-white" href="/">الرئيسية</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="/about">تواصل معنا</li>
+                            <li class="breadcrumb-item"><a class="text-white" href="/">{{ __('contact.home') }}</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="/about">{{ __('contact.contact') }}</li>
                         </ol>
                     </nav>
                 </div>
@@ -59,28 +59,28 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">تواصل معنا</h6>
-                <h1 class="mb-5">للمزيد من المعلومات تواصل معنا</h1>
+                <h6 class="section-title bg-white text-center text-primary px-3">{{ __('contact.contact') }}</h6>
+                <h1 class="mb-5">{{ __('contact.contact-info') }}</h1>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h5>إبقى على تواصل</h5>
-                    <p class="mb-4">ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص.</a></p>
+                    <h5>{{ __('contact.keep-in-touch') }}</h5>
+                    <p class="mb-4">{{ __('contact.paragraph') }}</a></p>
                     <div class="d-flex align-items-center mb-3">
                         <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
                             <i class="fa fa-map-marker-alt text-white"></i>
                         </div>
-                        <div class="me-3">
-                            <h5 class="text-primary">الموقع</h5>
-                            <p class="mb-0">السودان ,ولاية الجزيرة, فداسي الحليماب</p>
+                        <div class="mx-3">
+                            <h5 class="text-primary">{{ __('contact.location') }}</h5>
+                            <p class="mb-0">{{ __('footer.location') }}</p>
                         </div>
                     </div>
                     <div class="d-flex align-items-center mb-3">
                         <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
                             <i class="fa fa-phone-alt text-white"></i>
                         </div>
-                        <div class="me-3">
-                            <h5 class="text-primary">رقم الهاتف</h5>
+                        <div class="mx-3">
+                            <h5 class="text-primary">{{ __('contact.phone') }}</h5>
                             <p class="mb-0">+2499</p>
                         </div>
                     </div>
@@ -88,8 +88,8 @@
                         <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
                             <i class="fa fa-envelope-open text-white"></i>
                         </div>
-                        <div class="me-3">
-                            <h5 class="text-primary">البريد الإلكتروني</h5>
+                        <div class="mx-3">
+                            <h5 class="text-primary">{{ __('contact.email') }}</h5>
                             <p class="mb-0">Iqraa@Iqraa.com</p>
                         </div>
                     </div>
@@ -101,34 +101,34 @@
                         tabindex="0"></iframe>
                 </div>
                 <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-                    <form>
+                    <form class="">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
                                     <input type="text" class="form-control" id="name" placeholder="إسمك">
-                                    <label for="name">إسم المستخدم</label>
+                                    <label for="name">{{ __('contact.username') }}</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
                                     <input type="email" class="form-control" id="email" placeholder="البريد الإلكتروني">
-                                    <label for="email">البريد الإلكتروني</label>
+                                    <label for="email">{{ __('contact.email') }}</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
                                     <input type="text" class="form-control" id="subject" placeholder="الموضوع">
-                                    <label for="subject">الموضوع</label>
+                                    <label for="subject">{{ __('contact.subject') }}</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="اكتب الرسالة هنا" id="message" style="height: 150px"></textarea>
-                                    <label for="message">الرسالة</label>
+                                    <textarea class="form-control" placeholder="اكتب الرسالة هنا" id="message" style="height :15.5rem"></textarea>
+                                    <label for="message">{{ __('contact.message') }}</label>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">ارسل الرسالة</button>
+                                <button class="btn btn-primary w-100 py-3" type="submit">{{ __('contact.send') }}</button>
                             </div>
                         </div>
                     </form>

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="{{ Config::get('app.locale') == 'ar' ? 'rtl' : 'ltr' }}">
 
 <head>
     <meta charset="utf-8">
-    <title>كلية إقرأ - اخبار الكلية</title>
+    <title>{{ __('news.page-title') }}</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="كلية إقرا - اخبار الكلية" name="keywords">
     <meta content="كلية إقرا - اخبار الكلية" name="description">
@@ -14,7 +14,6 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -42,11 +41,11 @@
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
-                    <h1 class="display-3 text-white animated slideInDown">اخبار الكلية</h1>
+                    <h1 class="display-3 text-white animated slideInDown">{{ __('news.collage-news') }}</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a class="text-white" href="/">الرئيسية</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="/news">اخبار الكلية</li>
+                            <li class="breadcrumb-item"><a class="text-white" href="/">{{ __('news.home') }}</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="/news">{{ __('news.collage-news') }}</li>
                         </ol>
                     </nav>
                 </div>
@@ -59,8 +58,8 @@
     <div class="container-xxl pb-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">اخبار الكلية</h6>
-                <h1 class="mb-5">اخر الأحداث</h1>
+                <h6 class="section-title bg-white text-center text-primary px-3">{{ __('news.collage-news') }}</h6>
+                <h1 class="mb-5">{{ __('news.latest-news') }}</h1>
             </div>
             <div class="card mb-3 w-100 service-item border border-primary">
                 <div class="row">
@@ -69,9 +68,9 @@
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title py-3">عنوان الخبر</h5>
-                            <p class="card-text"> النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم المواقع</p>
-                            <p class="card-text"><small class="text-body-secondary">قبل 5 دقائق</small></p>
+                            <h5 class="card-title py-3">{{ __('news.event-title') }}</h5>
+                            <p class="card-text">{{ __('news.event-details') }}</p>
+                            <p class="card-text"><small class="text-body-secondary">{{ __('news.event-date') }}</small></p>
                         </div>
                     </div>
                 </div>
@@ -79,13 +78,13 @@
             <div class="card mb-3 w-100 service-item border border-primary">
                 <div class="row">
                     <div class="col-md-4">
-                        <img src="img/team-3.jpg" class="img-fluid h-100" alt="event">
+                        <img src="img/team-2.jpg" class="img-fluid h-100" alt="event">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title py-3">عنوان الخبر</h5>
-                            <p class="card-text"> النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم المواقع</p>
-                            <p class="card-text"><small class="text-body-secondary">قبل 10 دقائق</small></p>
+                            <h5 class="card-title py-3">{{ __('news.event-title') }}</h5>
+                            <p class="card-text">{{ __('news.event-details') }}</p>
+                            <p class="card-text"><small class="text-body-secondary">{{ __('news.event-date') }}</small></p>
                         </div>
                     </div>
                 </div>

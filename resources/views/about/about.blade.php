@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="{{ Config::get('app.locale') == 'ar' ? 'rtl' : 'ltr' }}">
 
 <head>
     <meta charset="utf-8">
-    <title>كلية إقرأ - عن الكلية</title>
+    <title>{{ __('about.page-title') }}</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -43,11 +43,11 @@
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
-                    <h1 class="display-3 text-white animated slideInDown">عن الكلية</h1>
+                    <h1 class="display-3 text-white animated slideInDown">{{ __('about.about-collage') }}</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a class="text-white" href="/">الرئيسية</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="/about">عن الكلية</li>
+                            <li class="breadcrumb-item"><a class="text-white" href="/">{{ __('about.home-page') }}</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="/about">{{ __('about.about-collage') }}</li>
                         </ol>
                     </nav>
                 </div>
@@ -66,31 +66,31 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp text-center" data-wow-delay="0.3s">
-                    <h6 class="section-title bg-white text-center text-primary px-3">عن الكلية</h6>
-                    <h3 class="mb-4">نبذة تاريخية عن الكلية</h3>
-                    <p class="mb-4">.قامت منظمة المجذوب الخيرية بإنشاء الكلية بتاريخ 20/1/2011م  في فداسي الحليماب  التى تبعد حوالى 17 كيلو متر شمال مدينة ودمدني على  موقع متميز مساحتة   24 فدان على طريق المرور السريع مدنى الخرطوم. وتم إجازة عدد من البرامج الاكاديمية هى  الطب والجراحة،  طب الاسنان،  الصيدلة،  المختبرات الطبية،  التمريض، الاقتصاد، العلوم الإدارية، و الدراسات الاسلامية</p>
+                    <h6 class="section-title bg-white text-center text-primary px-3">{{ __('about.about-collage') }}</h6>
+                    <h3 class="mb-4">{{ __('about.history') }}</h3>
+                    <p class="mb-4">{{ __('about.history-paragraph') }}</p>
                 
-                    <h3 class="mb-4">رسالة الكلية</h3>
-                    <p class="mb-4">المساهمة في التنمية الاقتصادية والاجتماعية للمجتمع وذلك بتخريج طلاب متميزين ليسهموا في بناء وتنمية المجتمع مواكبين التطور التقني الذي يشهده العالم، وإجراء البحوث العلمية وخدمة المجتمع للنهوض بالمجتمعات.</p>
+                    <h3 class="mb-4">{{ __('about.collage-message') }}</h3>
+                    <p class="mb-4">{{ __('about.collage-message-paragraph') }}</p>
                 </div>
             </div>
         </div>
     </div>
     <!-- About End -->
 
-    <!-- Service Start -->
+    <!-- Objectives Start -->
     <div class="container-xxl py-5">
         <div class="container">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">الأهداف</h6>
-                <h1 class="mb-5">الأهداف الاستراتيجية للكلية</h1>
+                <h6 class="section-title bg-white text-center text-primary px-3">{{ __('about.goals') }}</h6>
+                <h1 class="mb-5">{{ __('about.goals-s') }}</h1>
             </div>
             <div class="row g-4">
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
                             <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
-                            <p>تأهيل الطلاب علمياً وتربوياً لنيل الدرجات العلمية المختلفة</p>
+                            <p>{{ __('about.goals-1') }}</p>
                         </div>
                     </div>
                 </div>
@@ -98,7 +98,7 @@
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
                             <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
-                            <p>إجراء البحوث والدراسات ذات الصلة بالتنمية الاقتصادية والاجتماعية والصحية</p>
+                            <p>{{ __('about.goals-2') }}</p>
                         </div>
                     </div>
                 </div>
@@ -106,7 +106,7 @@
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
                             <i class="fa fa-3x fa fa-users text-primary mb-4"></i>
-                            <p>إعداد الطلاب كقيادات عامة فكرياً وذهنياً</p>
+                            <p>{{ __('about.goals-3') }}</p>
                         </div>
                     </div>
                 </div>
@@ -114,25 +114,25 @@
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
                             <i class="fa fa-3x fa-globe text-primary mb-4"></i>
-                            <p>توطيد العلاقات بين الكلية ومؤسسات التعليم العالي داخل وخارج البلاد بغرض تبادل الخبرات والتجارب</p>
+                            <p>{{ __('about.goals-4') }}</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Service End -->
+    <!-- Objectives End -->
     
     <!-- Word Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">كلمة العميد</h6>
+                <h6 class="section-title bg-white text-center text-primary px-3">{{ __('about.boss-word') }}</h6>
                 <div class="testimonial-item text-center">
                     <img class="testimonial-img border rounded-circle p-2 mx-auto mt-1 mb-3" src="img/boss.jpeg">
-                    <h3 class="mb-3">ب.عثمان محمد الأمين </h3>
+                    <h3 class="mb-3">{{ __('about.boss-name') }}</h3>
                     <div class="testimonial-text bg-light text-center p-4">
-                        <p class="mb-0 fs-4 lh-lg">قال تعالى : ( يرفع الله الذين آمنوا منكم والذين أوتوا العلم درجات)…نرحب بالطلاب والطالبات ونهنئهم على قبولهم بكلية اقرأ للعلوم والتكنولوجيا ونتمنى لهم إقامة طيبة موفقة بالكلية وان يصبحوا جميعا جزءاً فعالاً ومبدعاً في منظومة كلية إقرا. تهدف كلية إقرا للعلوم والتكنولوجيا لبناء جيل مبدع ومنتج ويتعلم إدارة الزمن لتحقيق الأهداف المرسومة له وفق الأنشطة التربوية الأكاديمية  في الكلية وذلك بتأهيل الطلاب لقيادة الفرق الخدمية والاجتماعية والصحية والبحثية والسلوك الحضاري لبناء بيئة اجتماعية صحيحة.نشكر طلابنا الأعزاء لاختيارهم هذه الكلية التي تلتمس طريقها مقتدية بالجامعات السودانية العريقة لتصبح جزءا  فعالا  في منظومة التعليم العالي بالسودان, إننا في كلية إقرأ نسعى إلى رسم الرؤى البناءة والخطط المستقبلية وفق نظرة ثاقبة للمساهمة في عملية التنمية وتحقيق الأهداف المرسومة ونتطلع لان تكون قمة متميزة في أساتذتها وطلابها وبنيتها التحتية</p>
+                        <p class="mb-0 fs-4 lh-lg">{{ __('about.boss-word-paragraph') }}</p>
                     </div>
                 </div>
             </div>
@@ -144,8 +144,8 @@
     <div class="container-xxl py-5 category">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">معرض الكلية</h6>
-                <h1 class="mb-5">صور من الكلية</h1>
+                <h6 class="section-title bg-white text-center text-primary px-3">{{ __('about.collage-gallery') }}</h6>
+                <h1 class="mb-5">{{ __('about.collage-photos') }}</h1>
             </div>
             <div class="row g-3">
                 <div class="col-lg-7 col-md-6">

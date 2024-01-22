@@ -134,12 +134,19 @@ $('.program-buttons').on('click', function () {
     });
 });
 
-// collage status 5925
-const obj1 = document.getElementById("counter-1");
-const obj2 = document.getElementById("counter-2");
-const obj3 = document.getElementById("counter-3");
-const obj4 = document.getElementById("counter-4");
-animateValue(obj1, 0, obj1.innerHTML, 5000);
-animateValue(obj2, 0, obj2.innerHTML, 5000);
-animateValue(obj3, 0, obj3.innerHTML, 5000);
-animateValue(obj4, 0, obj4.innerHTML, 5000);
+// collage status
+$(window).scroll(function() {
+    if ($(window).scrollTop() > 2200 ) {
+        $(window).off("scroll");
+        $('.Count').each(function () {
+            var $this = $(this);
+            jQuery({ Counter: 0 }).animate({ Counter: $this.attr("data") }, {
+                duration: 3500,
+                easing: 'swing',
+                step: function () {
+                    $this.text(Math.ceil(this.Counter));
+                }
+            });
+        });
+    }
+});

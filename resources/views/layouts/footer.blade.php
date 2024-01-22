@@ -2,14 +2,14 @@
     <div class="container py-5">
         <div class="row g-5">
             <div class="col">
-                <h4 class="text-white mb-3">رابط تهمك</h4>
-                <a class="btn btn-link" href="/">الصفحة الرئيسية</a>
-                <a class="btn btn-link" href="/about">عن الكلية</a>
-                <a class="btn btn-link" href="/contact">تواصل معنا</a>
+                <h4 class="text-white mb-3">{{ __('footer.links') }}</h4>
+                <a class="btn btn-link" href="/">{{ __('navbar.main-page') }}</a>
+                <a class="btn btn-link" href="/about">{{ __('footer.contect-info') }}</a>
+                <a class="btn btn-link" href="/contact">{{ __('footer.contact-us') }}</a>
             </div>
             <div class="col">
-                <h4 class="text-white mb-3">معلومات التواصل</h4>
-                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>السودان, الجزيرة, فداسي الحليماب</p>
+                <h4 class="text-white mb-3">{{ __('footer.contect-info') }}</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>{{ __('footer.location') }}</p>
                 <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+2499</p>
                 <p class="mb-2"><i class="fa fa-envelope me-3"></i><a href="mailto:info@Iqraa.edu.sd">info@Iqraa.edu.sd</a></p>
                 <div class="d-flex pt-2">
@@ -23,12 +23,12 @@
         <div class="copyright">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; جميع الحقوق محفوظة لكلية إقرأ للعلوم و التكنولوجيا
+                    &copy; {{ __('footer.rights') }}
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <div class="footer-menu">
-                        <a href="/">الصفحة الرئيسية</a>
-                        <a href="/contact">تواصل معنا</a>
+                        <a href="/">{{ __('navbar.main-page') }}</a>
+                        <a href="/contact">{{ __('footer.contact-us') }}</a>
                         <a href="">FQAs</a>
                     </div>
                 </div>

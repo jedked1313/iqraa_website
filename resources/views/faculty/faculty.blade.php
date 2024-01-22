@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ar" dir="{{ Config::get('app.locale') == 'ar' ? 'rtl' : 'ltr' }}">
-
 <head>
-    <meta charset="utf-8">
-    <title>{{ __('error.page-title') }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -14,7 +14,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -34,25 +34,9 @@
 <body>
     <!-- Spinner loading -->
     @include('components.spinner')
-
+    
     <!-- Navbar -->
     @include('layouts.navbar')
-
-    <!-- 404 Start -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container text-center">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <i class="bi bi-exclamation-triangle display-1 text-primary"></i>
-                    <h1 class="display-1">{{ __('error.error') }}</h1>
-                    <h1 class="mb-4">{{ __('error.not-found') }}</h1>
-                    <a class="btn btn-primary rounded-pill py-3 px-5" href="/">{{ __('error.return') }}</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 404 End -->
-        
 
     <!-- Footer -->
     @include('layouts.footer')
@@ -72,5 +56,4 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
-
 </html>

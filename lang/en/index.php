@@ -1,0 +1,28 @@
+<?php
+return [
+    "collage-name" => "Iqraa Collage of Sciences and Technology",
+    "read-more" => "Read More",
+    "read-about-us" => "Read About Collage",
+    "welcome" => "Welcome to Iqraa Collage of Sciences and Technology",
+    "about-collage-paragraph" => "قال تعالى : ( إقرأ باسم ربك الذي خلق * خلق الإنسان من علق * إقرأ وربك الأكرم * الذي علم بالقلم * علم الإنسان ما لم يعلم ) ,أُنشئت  كلية إقرأ للعلوم والتكنولوجيا بموجب توصية من منظمة المجذوب لخدمة القرآن الكريم وذلك في العام 2011م لتكون نبراساً للعلم والتعليم في ارض الجزيرة ولتساهم بشكل واضح وملموس في الإرتقاء بالمستوى العلمي والاكاديمي للطلاب وتقديم نموذج متطور للتعليم العالي والبحث العلمي وتخريج طلاب متميزين ليسهموا في بناء وتنمية المجتمع مواكبين التطور العلمي الذي يشهده العالم",
+    "why-iqraa" => "Why should you choose Iqraa collage ?",
+    "why-1" => "Excellent teaching staff",
+    "why-2" => "Great study environment",
+    "why-3" => "Certified Certificates",
+    "why-4" => "Classrooms equipped to the highest standard",
+    "why-5" => "Advanced curricula and study plans",
+    "collage-news" => "Collage News",
+    "latest-event" => "Latest News",
+    "event-title" => "Event Title",
+    "event-details" => "Event Details ...",
+    "all-news" => "All News",
+    "info" => "Information",
+    "status" => "Collage Status",
+    "students" => "Students",
+    "classrooms" => "Classrooms",
+    "gradute-students" => "Gradute Students",
+    "study-programs" => "Study Programs",
+    "students-opinions" => "Students Opinions",
+    "students-say" => "What do students say about collage ?",
+]
+?>

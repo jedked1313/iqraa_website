@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="{{ Config::get('app.locale') == 'ar' ? 'rtl' : 'ltr' }}">
 
 <head>
     <meta charset="utf-8">
     
-    <title>كلية اقرأ للعلوم و التكنولوجيا</title>
+    <title>{{ __('index.collage-name') }}</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -48,10 +48,10 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div dir="rtl" class="col-sm-10 col-lg-8">
-                                <h5 class="text-primary mb-3 animated slideInDown">كلية إقرأ للعلوم و التكنولوجيا</h5>
+                                <h5 class="text-primary mb-3 animated slideInDown">{{ __('index.collage-name') }}</h5>
                                 <h1 class="display-3 text-white animated slideInDown">مكتبة كلية إقرأ</h1>
                                 <p class="fs-5 text-white mb-4 pb-2">مكتبة علمية تشتمل على آلاف الكتب والبحوث العلمية و المراجع الطبية والعامة والمقررات العربية و الانجليزية, و يوجد بها بيئة مريحه جدا للدراسه و تخدم جميع التخصصات التي تُدرسها الكلية</p>
-                                <a href="#" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">إقرأ المزيد</a>
+                                <a href="#" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">{{ __('index.read-more') }}</a>
                             </div>
                         </div>
                     </div>
@@ -63,10 +63,10 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div dir="rtl" class="col-sm-10 col-lg-8">
-                                <h5 class="text-primary mb-3 animated slideInDown">كلية إقرأ للعلوم و التكنولوجيا</h5>
-                                <h1 class="display-3 text-white animated slideInDown">مستشفى كلية إقرأ</h1>
-                                <p class="fs-5 text-white mb-4 pb-2">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.</p>
-                                <a href="#" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">إقرأ المزيد</a>
+                                <h5 class="text-primary mb-3 animated slideInDown">{{ __('index.collage-name') }}</h5>
+                                <h1 class="display-3 text-white animated slideInDown">مستشفى أسنان كلية إقرأ</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">تتكون مستشفى أسنان كلية إقرأ من مجموعة  من عيادات الاسنان ويبلغ عددها 30 وحده بالإضافة الى غرفة عمليات كبيرة و غرفة اخرى صغيره و معامل التركيبات المتحركة و التركيبات الثابته و معمل عام للفحوصات و قسم للأشعة. </p>
+                                <a href="#" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">{{ __('index.read-more') }}</a>
                             </div>
                         </div>
                     </div>
@@ -86,28 +86,28 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp text-center" data-wow-delay="0.3s">
-                    <h6 class="section-title bg-white text-center text-primary px-3">إقرأ عنا</h6>
-                    <h2 class="mb-4">مرحبا بكم في كلية إقرأ للعلوم و التكنولوجيا</h2>
-                    <p class="mb-4">قال تعالى : ( إقرأ باسم ربك الذي خلق * خلق الإنسان من علق * إقرأ وربك الأكرم * الذي علم بالقلم * علم الإنسان ما لم يعلم ) ,أُنشئت  كلية إقرأ للعلوم والتكنولوجيا بموجب توصية من منظمة المجذوب لخدمة القرآن الكريم وذلك في العام 2011م لتكون نبراساً للعلم والتعليم في ارض الجزيرة ولتساهم بشكل واضح وملموس في الإرتقاء بالمستوى العلمي والاكاديمي للطلاب وتقديم نموذج متطور للتعليم العالي والبحث العلمي وتخريج طلاب متميزين ليسهموا في بناء وتنمية المجتمع مواكبين التطور العلمي الذي يشهده العالم</p>
-                    <h5>مميزات الكلية</h5>
-                    <div class="row gy-2 gx-4 mb-4 text-start">
+                    <h6 class="section-title bg-white text-center text-primary px-3">{{ __('index.read-about-us') }}</h6>
+                    <h2 class="mb-4">{{ __('index.welcome') }}</h2>
+                    <p class="mb-4">{{ __('index.about-collage-paragraph') }}</p>
+                    <h5 class="pb-3">{{ __('index.why-iqraa') }}</h5>
+                    <div class="row gy-2 gx-4 mb-4 {{ Config::get('app.locale') == 'ar' ? 'text-end' : 'text-start' }}">
                         <div class="col-sm-6">
-                            <p class="mb-0">كادر تدريسي متميّز<i class="fa fa-arrow-right text-primary me-2"></i></p>
+                            <p class="mb-0"><i class="fa {{ Config::get('app.locale') == 'ar' ? 'fa-arrow-left' : 'fa-arrow-right' }} text-primary mx-2"></i>{{ __('index.why-1') }}</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0">بيئة دراسية جيدة<i class="fa fa-arrow-right text-primary me-2"></i></p>
+                            <p class="mb-0"><i class="fa {{ Config::get('app.locale') == 'ar' ? 'fa-arrow-left' : 'fa-arrow-right' }} text-primary mx-2"></i>{{ __('index.why-2') }}</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0">شهادات معتمدة<i class="fa fa-arrow-right text-primary me-2"></i></p>
+                            <p class="mb-0"><i class="fa {{ Config::get('app.locale') == 'ar' ? 'fa-arrow-left' : 'fa-arrow-right' }} text-primary mx-2"></i>{{ __('index.why-3') }}</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0">قاعات دراسية مهيئة بأعلى مستوى<i class="fa fa-arrow-right text-primary me-2"></i></p>
+                            <p class="mb-0"><i class="fa {{ Config::get('app.locale') == 'ar' ? 'fa-arrow-left' : 'fa-arrow-right' }} text-primary mx-2"></i>{{ __('index.why-4') }}</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0">مناهج وخطط دراسية متطورة<i class="fa fa-arrow-right text-primary me-2"></i></p>
+                            <p class="mb-0"><i class="fa {{ Config::get('app.locale') == 'ar' ? 'fa-arrow-left' : 'fa-arrow-right' }} text-primary mx-2"></i>{{ __('index.why-5') }}</p>
                         </div>
                     </div>
-                    <a class="btn btn-primary py-3 px-5 mt-2" href="/about">إقرأ المزيد</a>
+                    <a class="btn btn-primary py-3 px-5 mt-2" href="/about">{{ __('index.read-more') }}</a>
                 </div>
             </div>
         </div>
@@ -118,44 +118,44 @@
     <div class="container-xxl py-5">
         <div class="container text-center">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">أخبار الكلية</h6>
-                <h1 class="mb-5">أخر الأحداث</h1>
+                <h6 class="section-title bg-white text-center text-primary px-3">{{ __('index.collage-news') }}</h6>
+                <h2 class="mb-5">{{ __('index.latest-event') }}</h2>
             </div>
-            <div class="row gap-3 justify-content-center">
-                <div class="card col-sm-6 wow fadeInUp p-0" style="width: 18rem;">
+            <div class="row g-3 row-cols-lg-3 row-cols-sm-2 justify-content-center">
+                <div class="card mx-2 wow fadeInUp p-0">
                     <img src="img/team-3.jpg" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title">عنوان الخبر</h5>
-                        <p class="card-text">..تفاصيل الخبر</p>
-                        <a href="#" class="btn btn-primary">الخبر كامل</a>
+                        <h5 class="card-title">{{ __('index.event-title') }}</h5>
+                        <p class="card-text">{{ __('index.event-details') }}</p>
+                        <a href="#" class="btn btn-primary">{{ __('index.read-more') }}</a>
                     </div>
                 </div>
-                <div class="card col-sm-6 wow fadeInUp p-0" style="width: 18rem;">
+                <div class="card mx-2 wow fadeInUp p-0">
                     <img src="img/team-3.jpg" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title">عنوان الخبر</h5>
-                        <p class="card-text">..تفاصيل الخبر</p>
-                        <a href="#" class="btn btn-primary">الخبر كامل</a>
+                        <h5 class="card-title">{{ __('index.event-title') }}</h5>
+                        <p class="card-text">{{ __('index.event-details') }}</p>
+                        <a href="#" class="btn btn-primary">{{ __('index.read-more') }}</a>
                     </div>
                 </div>
-                <div class="card col-sm-6 wow fadeInUp p-0" style="width: 18rem;">
+                <div class="card mx-2 wow fadeInUp p-0">
                     <img src="img/team-3.jpg" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title">عنوان الخبر</h5>
-                        <p class="card-text">..تفاصيل الخبر</p>
-                        <a href="#" class="btn btn-primary">الخبر كامل</a>
+                        <h5 class="card-title">{{ __('index.event-title') }}</h5>
+                        <p class="card-text">{{ __('index.event-details') }}</p>
+                        <a href="#" class="btn btn-primary">{{ __('index.read-more') }}</a>
                     </div>
                 </div>
-                <div class="card col-sm-6 wow fadeInUp p-0" style="width: 18rem;">
+                <div class="card mx-2 wow fadeInUp p-0">
                     <img src="img/team-3.jpg" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title">عنوان الخبر</h5>
-                        <p class="card-text">..تفاصيل الخبر</p>
-                        <a href="#" class="btn btn-primary">الخبر كامل</a>
+                        <h5 class="card-title">{{ __('index.event-title') }}</h5>
+                        <p class="card-text">{{ __('index.event-details') }}</p>
+                        <a href="#" class="btn btn-primary">{{ __('index.read-more') }}</a>
                     </div>
                 </div>
             </div>
-            <a href="/news" class="btn btn-primary w-25 animated slideInLeft m-auto mt-4">إقرأ المزيد</a>
+            <a href="/news" class="btn btn-primary w-25 animated slideInLeft m-auto mt-4">{{ __('index.all-news') }}</a>
         </div>
     </div>
     <!-- Team End -->
@@ -165,28 +165,28 @@
         <div class="container">
             <div class="row text-center">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="section-title bg-white text-center text-primary px-3">معلومات</h6>
-                    <h1 class="mb-5">إحصائيات الكلية</h1>
-                </div>
-                <div class="status col-lg-3 col-md-6 border-end border-start">
-                    <span class="fa fa-book fa-5x text-primary p-3"></span>
-                    <h1 id="counter-1">7</h1>
-                    <h5>البرامج</h5>
+                    <h6 class="section-title bg-white text-center text-primary px-3">{{ __('index.info') }}</h6>
+                    <h2 class="mb-5">{{ __('index.status') }}</h2>
                 </div>
                 <div class="status col-lg-3 col-md-6 border-end border-start">
                     <span class="fa fa-users fa-5x text-primary p-3"></span>
-                    <h1 id="counter-2">2856</h1>
-                    <h5>الطلاب</h5>
+                    <h1 class="Count" data=2856>0</h1>
+                    <h5>{{ __('index.students') }}</h5>
                 </div>
                 <div class="status col-lg-3 col-md-6 border-end border-start">
                     <span class="fa fa-university fa-5x text-primary p-3"></span>
-                    <h1 id="counter-3">15</h1>
-                    <h5>القاعات</h5>
+                    <h1 class="Count" data=15>0</h1>
+                    <h5>{{ __('index.classrooms') }}</h5>
                 </div>
                 <div class="status col-lg-3 col-md-6 border-end border-start">
                     <span class="fa fa-graduation-cap fa-5x text-primary p-3"></span>
-                    <h1 id="counter-4">856</h1>
-                    <h5>الخريجين</h5>
+                    <h1 class="Count" data=856>0</h1>
+                    <h5>{{ __('index.gradute-students') }}</h5>
+                </div>
+                <div class="status col-lg-3 col-md-6 border-end border-start">
+                    <span class="fa fa-book fa-5x text-primary p-3"></span>
+                    <h1 class="Count" data=7>0</h1>
+                    <h5>{{ __('index.study-programs') }}</h5>
                 </div>
             </div>
         </div>
@@ -197,8 +197,8 @@
     <div dir="ltr" class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="text-center">
-                <h6 class="section-title bg-white text-center text-primary px-3">أراء الطلاب</h6>
-                <h1 class="mb-5">! ماذا يقول الطلاب عن الكلية</h1>
+                <h6 class="section-title bg-white text-center text-primary px-3">{{ __('index.students-opinions') }}</h6>
+                <h2 class="mb-5">{{ __('index.students-say') }}</h2>
             </div>
             <div class="owl-carousel testimonial-carousel position-relative">
                 <div class="testimonial-item text-center">
@@ -206,12 +206,12 @@
                     <h5 class="mb-0">عائدة محمود</h5>
                     <p>برنامج طب الأسنان</p>
                     <div class="testimonial-text bg-light text-center p-4">
-                        <p class="mb-0">كلية إقرأ جعلتني امر بالكثير من التجارب الحياتية و العملية والتي كنت شخصيتي</p>
+                        <p class="mb-0">كلية إقرأ جعلتني امر بالكثير من التجارب الحياتية و العملية والتي كونت شخصيتي</p>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="testimonial-img border rounded-circle p-2 mx-auto mb-3" src="img/student-2.jpg">
-                    <h5 class="mb-0">أدن عمر</h5>
+                    <h5 class="mb-0">أدنا عمر</h5>
                     <p>برنامج طب الاسنان</p>
                     <div class="testimonial-text bg-light text-center p-4">
                         <p class="mb-0">انا سعيدة جدا بدخولي الى كلية إقرا, يوجد بها بيئة دراسية جيدة</p>
@@ -219,7 +219,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="testimonial-img border rounded-circle p-2 mx-auto mb-3" src="img/student-3.jpg">
-                    <h5 class="mb-0">معاذ البشير</h5>
+                    <h5 class="mb-0">معاذ احمد عبيد</h5>
                     <p>برنامج التمريض</p>
                     <div class="testimonial-text bg-light text-center p-4">
                         <p class="mb-0">كلية جميلة جدا تحتوي علي العديد من الانشطة </p>
