@@ -14,7 +14,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -57,7 +57,7 @@
     <!-- End Header -->
 
     <!-- Categories Start -->
-    <div class="container-xxl py-5 category">
+    <div class="container-xxl category">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3">{{ __('programs.programs')}}</h6>
@@ -89,6 +89,22 @@
                         </div>
                         <div class="text-center p-4 pb-0">
                             <h5 class="mb-4">{{ __('programs.pharmacy') }}</h5>
+                        </div>
+                        <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i> 49 {{ __('programs.courses')}}</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i> 3000 {{ __('programs.students')}}</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <a href="#">
+                                <img class="img-fluid" src="img/dentist.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h5 class="mb-4">{{ __('programs.dentist') }}</h5>
                         </div>
                         <div class="d-flex border-top">
                             <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i> 49 {{ __('programs.courses')}}</small>
@@ -136,7 +152,7 @@
                             </a>
                         </div>
                         <div class="text-center p-4 pb-0">
-                            <h5 class="mb-4">{{ __('programs.nursing') }}</h5>
+                            <h5 class="mb-4">{{ __('programs.nursing') }} <br></h5>
                         </div>
                         <div class="d-flex border-top">
                             <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i> 49 {{ __('programs.courses') }}</small>

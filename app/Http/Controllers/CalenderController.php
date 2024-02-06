@@ -3,15 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\News;
+use App\Models\Calender;
 
 
-class NewsController extends Controller
+class CalenderController extends Controller
 {
     public function index() {
         //Get data from DB in here and pass it to the view
     
-        $news = News::all()->sortByDesc('title_ar');
-        return view('news.news',compact('news'));
+        $calendars = Calender::all();
+        return view('calender.calender',compact('calendars'));
     }
 }

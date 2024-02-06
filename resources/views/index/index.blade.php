@@ -15,7 +15,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -42,36 +42,22 @@
     <!-- Carousel Start -->
     <div dir="ltr" class="container-fluid p-0 mb-5">
         <div class="owl-carousel header-carousel position-relative">
+            @foreach($sliders as $slide)
             <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                <img class="img-fluid" src="{{ URL::asset($slide->image) }}" alt="">
                 <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
                     <div class="container">
-                        <div class="row justify-content-center">
-                            <div dir="rtl" class="col-sm-10 col-lg-8">
+                        <div class="row justify-end">
+                            <div dir="rtl">
                                 <h5 class="text-primary mb-3 animated slideInDown">{{ __('index.collage-name') }}</h5>
-                                <h1 class="display-3 text-white animated slideInDown">مكتبة كلية إقرأ</h1>
-                                <p class="fs-5 text-white mb-4 pb-2">مكتبة علمية تشتمل على آلاف الكتب والبحوث العلمية و المراجع الطبية والعامة والمقررات العربية و الانجليزية, و يوجد بها بيئة مريحه جدا للدراسه و تخدم جميع التخصصات التي تُدرسها الكلية</p>
-                                <a href="#" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">{{ __('index.read-more') }}</a>
+                                <h1 class="display-3 text-white animated slideInDown">{{ Config::get('app.locale') == 'ar' ? $slide->title_ar : $slide->title_en }}</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">{{ Config::get('app.locale') == 'ar' ? $slide->description_ar : $slide->description_en }}</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/carousel-3.png" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div dir="rtl" class="col-sm-10 col-lg-8">
-                                <h5 class="text-primary mb-3 animated slideInDown">{{ __('index.collage-name') }}</h5>
-                                <h1 class="display-3 text-white animated slideInDown">مستشفى أسنان كلية إقرأ</h1>
-                                <p class="fs-5 text-white mb-4 pb-2">تتكون مستشفى أسنان كلية إقرأ من مجموعة  من عيادات الاسنان ويبلغ عددها 30 وحده بالإضافة الى غرفة عمليات كبيرة و غرفة اخرى صغيره و معامل التركيبات المتحركة و التركيبات الثابته و معمل عام للفحوصات و قسم للأشعة. </p>
-                                <a href="#" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">{{ __('index.read-more') }}</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
     <!-- Carousel End -->
@@ -87,24 +73,24 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp text-center" data-wow-delay="0.3s">
                     <h6 class="section-title bg-white text-center text-primary px-3">{{ __('index.read-about-us') }}</h6>
-                    <h2 class="mb-4">{{ __('index.welcome') }}</h2>
+                    <h3 class="my-2">{{ __('index.welcome') }}</h3>
                     <p class="mb-4">{{ __('index.about-collage-paragraph') }}</p>
                     <h5 class="pb-3">{{ __('index.why-iqraa') }}</h5>
                     <div class="row gy-2 gx-4 mb-4 {{ Config::get('app.locale') == 'ar' ? 'text-end' : 'text-start' }}">
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa {{ Config::get('app.locale') == 'ar' ? 'fa-arrow-left' : 'fa-arrow-right' }} text-primary mx-2"></i>{{ __('index.why-1') }}</p>
+                            <p class="mb-0"><i class="far fa-check-square text-primary mx-2"></i>{{ __('index.why-1') }}</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa {{ Config::get('app.locale') == 'ar' ? 'fa-arrow-left' : 'fa-arrow-right' }} text-primary mx-2"></i>{{ __('index.why-2') }}</p>
+                            <p class="mb-0"><i class="far fa-check-square text-primary mx-2"></i>{{ __('index.why-2') }}</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa {{ Config::get('app.locale') == 'ar' ? 'fa-arrow-left' : 'fa-arrow-right' }} text-primary mx-2"></i>{{ __('index.why-3') }}</p>
+                            <p class="mb-0"><i class="far fa-check-square text-primary mx-2"></i>{{ __('index.why-3') }}</p>
                         </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa {{ Config::get('app.locale') == 'ar' ? 'fa-arrow-left' : 'fa-arrow-right' }} text-primary mx-2"></i>{{ __('index.why-4') }}</p>
+                        <div class="{{ Config::get('app.locale') == 'ar' ? 'col-sm-6' : 'col-sm-12' }}">
+                            <p class="mb-0"><i class="far fa-check-square text-primary mx-2"></i>{{ __('index.why-4') }}</p>
                         </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa {{ Config::get('app.locale') == 'ar' ? 'fa-arrow-left' : 'fa-arrow-right' }} text-primary mx-2"></i>{{ __('index.why-5') }}</p>
+                        <div class="{{ Config::get('app.locale') == 'ar' ? 'col-sm-6' : 'col-sm-12' }}">
+                            <p class="mb-0"><i class="far fa-check-square text-primary mx-2"></i>{{ __('index.why-5') }}</p>
                         </div>
                     </div>
                     <a class="btn btn-primary py-3 px-5 mt-2" href="/about">{{ __('index.read-more') }}</a>
@@ -114,54 +100,40 @@
     </div>
     <!-- About End -->
 
-    <!-- Team Start -->
+    <!-- News Start -->
     <div class="container-xxl py-5">
         <div class="container text-center">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3">{{ __('index.collage-news') }}</h6>
                 <h2 class="mb-5">{{ __('index.latest-event') }}</h2>
             </div>
-            <div class="row g-3 row-cols-lg-3 row-cols-sm-2 justify-content-center">
-                <div class="card mx-2 wow fadeInUp p-0">
-                    <img src="img/team-3.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ __('index.event-title') }}</h5>
-                        <p class="card-text">{{ __('index.event-details') }}</p>
-                        <a href="#" class="btn btn-primary">{{ __('index.read-more') }}</a>
+            <div class="row gy-5 justify-content-evenly">
+                @foreach ($news as $new)
+                <div class="col-md-5 col-sm-11 card news-item p-0" >
+                    <img class="card-img-top h-50" src="{{ URL::asset($new->image) }}" alt="" />
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <h4 class="card-title">{{ Config::get('app.locale') == 'ar' ? $new->title_ar : $new->title_en }}</h4>
+                        <p class="card-text flex-grow-1">{{ Config::get('app.locale') == 'ar' ? $new->description_ar : $new->description_en }}</p>
+                        <h6 class="card-subtitle mb-2 text-muted">{{ __('index.date') }}{{ substr($new->created_at,0,-9) }}</h6>
+                        <a href="#" class="card-link btn btn-primary w-50">{{ __('index.read-more') }}</a>
                     </div>
                 </div>
-                <div class="card mx-2 wow fadeInUp p-0">
-                    <img src="img/team-3.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ __('index.event-title') }}</h5>
-                        <p class="card-text">{{ __('index.event-details') }}</p>
-                        <a href="#" class="btn btn-primary">{{ __('index.read-more') }}</a>
-                    </div>
-                </div>
-                <div class="card mx-2 wow fadeInUp p-0">
-                    <img src="img/team-3.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ __('index.event-title') }}</h5>
-                        <p class="card-text">{{ __('index.event-details') }}</p>
-                        <a href="#" class="btn btn-primary">{{ __('index.read-more') }}</a>
-                    </div>
-                </div>
-                <div class="card mx-2 wow fadeInUp p-0">
-                    <img src="img/team-3.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ __('index.event-title') }}</h5>
-                        <p class="card-text">{{ __('index.event-details') }}</p>
-                        <a href="#" class="btn btn-primary">{{ __('index.read-more') }}</a>
-                    </div>
-                </div>
+                @endforeach
             </div>
-            <a href="/news" class="btn btn-primary w-25 animated slideInLeft m-auto mt-4">{{ __('index.all-news') }}</a>
+            <a href="/news" class="btn btn-primary animated slideInLeft px-5 mt-4">{{ __('index.all-news') }}</a>
         </div>
     </div>
-    <!-- Team End -->
+    <!-- News End -->
+
+    <!-- Banner Start -->
+    <div class="banner text-center" id="status">
+        <h1 class="text-white">{{ __('index.banner-h') }}</h1>
+        <a href="/programs" class="btn btn-primary mt-3">{{ __('index.programs') }}</a>
+    </div>
+    <!-- Banner End -->
 
     <!-- status Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5" >
         <div class="container">
             <div class="row text-center">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -203,42 +175,42 @@
             <div class="owl-carousel testimonial-carousel position-relative">
                 <div class="testimonial-item text-center">
                     <img class="testimonial-img border rounded-circle p-2 mx-auto mb-3" src="img/student-1.jpg">
-                    <h5 class="mb-0">عائدة محمود</h5>
-                    <p>برنامج طب الأسنان</p>
+                    <h5 class="mb-0">{{ __('index.student-name-1') }}</h5>
+                    <p>{{ __('index.student-program-1') }}</p>
                     <div class="testimonial-text bg-light text-center p-4">
-                        <p class="mb-0">كلية إقرأ جعلتني امر بالكثير من التجارب الحياتية و العملية والتي كونت شخصيتي</p>
+                        <p class="mb-0">{{ __('index.student-message-1') }}</p>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="testimonial-img border rounded-circle p-2 mx-auto mb-3" src="img/student-2.jpg">
-                    <h5 class="mb-0">أدنا عمر</h5>
-                    <p>برنامج طب الاسنان</p>
+                    <h5 class="mb-0">{{ __('index.student-name-2') }}</h5>
+                    <p>{{ __('index.student-program-2') }}</p>
                     <div class="testimonial-text bg-light text-center p-4">
-                        <p class="mb-0">انا سعيدة جدا بدخولي الى كلية إقرا, يوجد بها بيئة دراسية جيدة</p>
+                        <p class="mb-0">{{ __('index.student-message-2') }}</p>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="testimonial-img border rounded-circle p-2 mx-auto mb-3" src="img/student-3.jpg">
-                    <h5 class="mb-0">معاذ احمد عبيد</h5>
-                    <p>برنامج التمريض</p>
+                    <h5 class="mb-0">{{ __('index.student-name-3') }}</h5>
+                    <p>{{ __('index.student-program-3') }}</p>
                     <div class="testimonial-text bg-light text-center p-4">
-                        <p class="mb-0">كلية جميلة جدا تحتوي علي العديد من الانشطة </p>
+                        <p class="mb-0">{{ __('index.student-message-3') }}</p>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="testimonial-img border rounded-circle p-2 mx-auto mb-3" src="img/student-4.jpg">
-                    <h5 class="mb-0">ميعاد اباذر</h5>
-                    <p>برنامج الصيدلة</p>
+                    <h5 class="mb-0">{{ __('index.student-name-4') }}</h5>
+                    <p>{{ __('index.student-program-4') }}</p>
                     <div class="testimonial-text bg-light text-center p-4">
-                        <p class="mb-0">وجودي في كلية إقرا اتاح لي اكتشاف العديد من المهارات و الأنشطة</p>
+                        <p class="mb-0">{{ __('index.student-message-4') }}</p>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="testimonial-img border rounded-circle p-2 mx-auto mb-3" src="img/student-5.jpg">
-                    <h5 class="mb-0">فاطمة محمد</h5>
-                    <p>برنامج المختبرات</p>
+                    <h5 class="mb-0">{{ __('index.student-name-5') }}</h5>
+                    <p>{{ __('index.student-program-5') }}</p>
                     <div class="testimonial-text bg-light text-center p-4">
-                        <p class="mb-0">الكلية لديها مميزات عن باقي الكليات يوجد فيها حرم الكلية كبير ومكان  أستراحة  الطلاب تحت الاشجار يعطي طاقة  ايجابية  وكل سمستر في زمنه المحدد</p>
+                        <p class="mb-0">{{ __('index.student-message-5') }}</p>
                     </div>
                 </div>
             </div>

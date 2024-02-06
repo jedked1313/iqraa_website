@@ -2,9 +2,9 @@
 return [
     "main-page" => "Home",
     "about-collage" => "About Collage",
-    "study-program" => "Study Programs",
+    "study-program" => "Study Programs  ",
     "news" => "News",
-    "departments" => "Departments",
+    "departments" => "Departments  ",
     "contact-us" => "Contact Us",
     "medicine" => "Medicine and surgery",
     "pharmacy" => "Pharmacy",
@@ -14,7 +14,10 @@ return [
     "nursing" => "Nursing",
     "laboratories" => "Laboratories",
     "registrar" => "Registrar",
+    "academic-affairs" => "Academic Affairs",
     "scientific-affairs" => "Scientific Affairs",
     "student-affairs" => "Student Affairs",
+    "instructors" => "Instructors",
+    "calender" => "Annual Calender",
 ]
 ?>

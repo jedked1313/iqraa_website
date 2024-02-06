@@ -3,6 +3,7 @@ return [
     "page-title" => "Iqraa collage - About collage",
     "about-collage" => "About Collage",
     "home-page" => "Home",
+    "collage-info" => "information about Collage",
     "history" => "A brief history of the collage",
     "history-paragraph" => "Al-Majzoub Charitable Organization established the college on 1/20/2011 in Fadassi Al-Halimab, which is about 17 kilometers north of the city of Wad Medani, on a distinguished location of 24 acres on the Khartoum-Madani highway. A number of academic programs were approved, including medicine and surgery, dentistry, pharmacy, medical laboratories, nursing, economics, administrative sciences, and Islamic studies.",
     "collage-message" => "Collage Message",

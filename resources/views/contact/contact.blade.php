@@ -14,7 +14,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -56,7 +56,7 @@
     <!-- End Header -->
 
     <!-- Contact Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3">{{ __('contact.contact') }}</h6>
@@ -101,34 +101,52 @@
                         tabindex="0"></iframe>
                 </div>
                 <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-                    <form class="">
+                    @if(Session::has('success'))
+                    <div class="alert alert-success">
+                        {{ Session::get('success') }}
+                    </div>
+                    @endif
+                    <form method="POST" action="{{ route('contact.store') }}">
+                        @csrf
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="إسمك">
-                                    <label for="name">{{ __('contact.username') }}</label>
+                                    <input type="text" class="form-control {{ $errors->has('username') ? 'error' : ''}}" value="{{ old('username') }}" name="username" id="username" placeholder="{{ __('contact.username') }}">
+                                    <label for="username">{{ __('contact.username') }}</label>
+                                    @if ($errors->has('username'))
+                                    <div class="error text-danger">{{ $errors->first('username') }}</div>
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="البريد الإلكتروني">
+                                    <input type="email" class="form-control {{ $errors->has('email') ? 'error' : ''}}" value="{{ old('email') }}" name="email" id="email" placeholder="{{ __('contact.email') }}">
                                     <label for="email">{{ __('contact.email') }}</label>
+                                    @if ($errors->has('email'))
+                                    <div class="error text-danger">{{ $errors->first('email') }}</div>
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="الموضوع">
+                                    <input type="text" class="form-control {{ $errors->has('subject') ? 'error' : ''}}" value="{{ old('subject') }}" name="subject" id="subject" placeholder="{{ __('contact.subject') }}">
                                     <label for="subject">{{ __('contact.subject') }}</label>
+                                    @if ($errors->has('subject'))
+                                    <div class="error text-danger">{{ $errors->first('subject')}}</div>
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="اكتب الرسالة هنا" id="message" style="height :15.5rem"></textarea>
+                                    <textarea class="form-control {{ $errors->has('message') ? 'error' : ''}}" value="{{ old('message') }}" placeholder="{{ __('contact.message') }}" name="message" id="message" style="height :15.5rem"></textarea>
                                     <label for="message">{{ __('contact.message') }}</label>
+                                    @if ($errors->has('message'))
+                                    <div class="error text-danger">{{ $errors->first('message') }}</div>
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">{{ __('contact.send') }}</button>
+                                <button type="submit" name="send" value="Submit" class="btn btn-primary w-100 py-3">{{ __('contact.send') }}</button>
                             </div>
                         </div>
                     </form>

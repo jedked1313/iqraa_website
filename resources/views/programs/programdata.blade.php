@@ -14,7 +14,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -58,7 +58,7 @@
     <!-- End Header -->
 
     <!-- Program Data Start -->
-    <div class="container-xxl pt-1">
+    <div class="container-xxl">
         <div class="container">
             <div class="text-center wow fadeInUp mb-3" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3">برنامج الطب و الجراحه</h6>

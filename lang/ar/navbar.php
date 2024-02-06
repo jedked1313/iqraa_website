@@ -10,11 +10,14 @@ return [
     "pharmacy" => "الصيدلة",
     "dentist" => "طب الاسنان",
     "eco" => "الاقتصاد والدراسات المصرفية",
-    "islamic-studies" => "",
+    "islamic-studies" => "الدراسات الأسلامية",
     "nursing" => "التمريض",
     "laboratories" => "المخبرات",
     "registrar" => "المسجل",
+    "academic-affairs" => "الشؤون الأكاديمية",
     "scientific-affairs" => "الشؤون العلمية",
     "student-affairs" => "شؤون الطلاب",
+    "instructors" => "هيئة التدريس",
+    "calender" => "التقويم السنوي",
 ]
 ?>

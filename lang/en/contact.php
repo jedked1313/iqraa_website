@@ -13,5 +13,6 @@ return [
     "subject" => "Subject",
     "message" => "Message",
     "send" => "Send message",
+    "success" => "We have received your message and would like to thank you for writing to us."
 ]
 ?>

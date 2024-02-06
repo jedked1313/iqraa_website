@@ -2,16 +2,16 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Requests\NewsRequest;
+use App\Http\Requests\CalenderRequest;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
 
 /**
- * Class NewsCrudController
+ * Class CalenderCrudController
  * @package App\Http\Controllers\Admin
  * @property-read \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $crud
  */
-class NewsCrudController extends CrudController
+class CalenderCrudController extends CrudController
 {
     use \Backpack\CRUD\app\Http\Controllers\Operations\ListOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\CreateOperation;
@@ -19,44 +19,25 @@ class NewsCrudController extends CrudController
     use \Backpack\CRUD\app\Http\Controllers\Operations\DeleteOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\ShowOperation;
 
-
-    private function getFieldsData($show = FALSE) {
-        return 
-        [
+    private function getFieldsData(){
+        return [
             [
                 'label' => __('admin.title-ar'),
-                'name' => "title_ar",
-                'type' => "text",
+                'name' => 'title_ar',
                 'validationRules' => 'required',
                 'validationMessages' => ['required' => __('admin.required')]
             ],
             [
                 'label' => __('admin.title-en'),
-                'name' => "title_en",
-                'type' => "text",
+                'name' => 'title_en',
                 'validationRules' => 'required',
                 'validationMessages' => ['required' => __('admin.required')]
             ],
             [
-                'label' => __('admin.description-ar'),
-                'name' => "description_ar",
-                'type' => "text",
+                'label' => __('admin.date'),
+                'name' => 'date',
                 'validationRules' => 'required',
                 'validationMessages' => ['required' => __('admin.required')]
-            ],
-            [
-                'label' => __('admin.description-en'),
-                'name' => "description_en",
-                'type' => "text",
-                'validationRules' => 'required',
-                'validationMessages' => ['required' => __('admin.required')]
-            ],
-            [
-                'label' => __('admin.image'),
-                'name' => "image",
-                'type' => ($show ? 'view' : 'upload'),
-                'view' => 'layouts/image',
-                'upload' => true,
             ]
         ];
     }
@@ -67,9 +48,9 @@ class NewsCrudController extends CrudController
      */
     public function setup()
     {
-        CRUD::setModel(\App\Models\News::class);
-        CRUD::setRoute(config('backpack.base.route_prefix') . '/news');
-        CRUD::setEntityNameStrings('news', 'news');
+        CRUD::setModel(\App\Models\Calender::class);
+        CRUD::setRoute(config('backpack.base.route_prefix') . '/calender');
+        CRUD::setEntityNameStrings('calender', 'calenders');
     }
 
     /**
@@ -80,13 +61,11 @@ class NewsCrudController extends CrudController
      */
     protected function setupListOperation()
     {
-        $this->crud->set('show.setFromDb', false);
-        $this->crud->addColumns($this->getFieldsData(TRUE));
-
+        $this->crud->addColumns($this->getFieldsData());
+        CRUD::setFromDb(); // set columns from db columns.
         /**
-         * Columns can be defined using the fluent syntax or array syntax:
+         * Columns can be defined using the fluent syntax:
          * - CRUD::column('price')->type('number');
-         * - CRUD::addColumn(['name' => 'price', 'type' => 'number']);
          */
     }
 
@@ -98,9 +77,10 @@ class NewsCrudController extends CrudController
      */
     protected function setupCreateOperation()
     {
-        CRUD::setValidation(NewsRequest::class);
+        CRUD::setValidation([]);
         CRUD::setFromDb(); // set fields from db columns.
         $this->crud->addFields($this->getFieldsData());
+
         /**
          * Fields can be defined using the fluent syntax:
          * - CRUD::field('price')->type('number');

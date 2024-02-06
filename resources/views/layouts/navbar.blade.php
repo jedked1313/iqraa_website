@@ -24,17 +24,17 @@
                 </div>
                 <a href="/news" class="nav-item nav-link">{{ __('navbar.news') }}</a>
                 <div class="nav-item dropdown">
-                    <a href="/departments" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">{{ __('navbar.departments') }}  </a>
+                    <a href="/departments" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">{{ __('navbar.academic-affairs') }}  </a>
                     <div class="dropdown-menu fade-down m-0">
                         <a href="/departments" class="dropdown-item">{{ __('navbar.departments') }}</a>
+                        <a href="/instructors" class="dropdown-item">{{ __('navbar.instructors') }}</a>
+                        <a href="/calender" class="dropdown-item">{{ __('navbar.calender') }}</a>
                         <a href="#" class="dropdown-item">{{ __('navbar.registrar') }}</a>
                         <a href="#" class="dropdown-item">{{ __('navbar.scientific-affairs') }}</a>
                         <a href="#" class="dropdown-item">{{ __('navbar.student-affairs') }}</a>
                     </div>
                 </div>
                 <a href="/contact" class="nav-item nav-link">{{ __('navbar.contact-us') }}</a>
-                <a href="{{ route('languageSelection','ar') }}">العربية</a>
-                <a href="{{ route('languageSelection','en') }}">English</a>
             </div>
         </div>
     </div>

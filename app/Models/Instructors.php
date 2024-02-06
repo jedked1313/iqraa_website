@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
 
-class News extends Model
+class Instructors extends Model
 {
     use CrudTrait;
     use HasFactory;
@@ -19,11 +19,12 @@ class News extends Model
     |--------------------------------------------------------------------------
     */
 
-    protected $table = 'news';
+    protected $table = 'instructors';
     // protected $primaryKey = 'id';
     // public $timestamps = false;
     protected $guarded = ['id'];
-    protected $fillable = ['title_ar','title_en','description_ar','description_en','image'];
+    protected $input_defualt = 'storage/instructors/default.svg';
+    protected $fillable = ['name_ar','name_en','major_ar','major_en','email','image'];
     // protected $hidden = [];
 
     /*
@@ -39,12 +40,11 @@ class News extends Model
         });
     }
     
-    
     public function setImageAttribute($value)
     {
         $attribute_name = "image";
         $disk = "public";
-        $destination_path = "/news";
+        $destination_path = "/instructors";
         if ($value==null) {
             // delete the image from disk
             Storage::delete(Str::replaceFirst('storage/','public/',$this->{$attribute_name}));

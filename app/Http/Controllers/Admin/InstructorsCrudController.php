@@ -2,16 +2,16 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Requests\NewsRequest;
+use App\Http\Requests\InstructorsRequest;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
 
 /**
- * Class NewsCrudController
+ * Class InstructorsCrudController
  * @package App\Http\Controllers\Admin
  * @property-read \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $crud
  */
-class NewsCrudController extends CrudController
+class InstructorsCrudController extends CrudController
 {
     use \Backpack\CRUD\app\Http\Controllers\Operations\ListOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\CreateOperation;
@@ -19,34 +19,40 @@ class NewsCrudController extends CrudController
     use \Backpack\CRUD\app\Http\Controllers\Operations\DeleteOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\ShowOperation;
 
-
     private function getFieldsData($show = FALSE) {
         return 
         [
             [
-                'label' => __('admin.title-ar'),
-                'name' => "title_ar",
+                'label' => __('admin.name-ar'),
+                'name' => "name_ar",
                 'type' => "text",
                 'validationRules' => 'required',
                 'validationMessages' => ['required' => __('admin.required')]
             ],
             [
-                'label' => __('admin.title-en'),
-                'name' => "title_en",
+                'label' => __('admin.name-en'),
+                'name' => "name_en",
                 'type' => "text",
                 'validationRules' => 'required',
                 'validationMessages' => ['required' => __('admin.required')]
             ],
             [
-                'label' => __('admin.description-ar'),
-                'name' => "description_ar",
+                'label' => __('admin.major-ar'),
+                'name' => "major_ar",
                 'type' => "text",
                 'validationRules' => 'required',
                 'validationMessages' => ['required' => __('admin.required')]
             ],
             [
-                'label' => __('admin.description-en'),
-                'name' => "description_en",
+                'label' => __('admin.major-en'),
+                'name' => "major_en",
+                'type' => "text",
+                'validationRules' => 'required',
+                'validationMessages' => ['required' => __('admin.required')]
+            ],
+            [
+                'label' => __('admin.email'),
+                'name' => "email",
                 'type' => "text",
                 'validationRules' => 'required',
                 'validationMessages' => ['required' => __('admin.required')]
@@ -67,9 +73,9 @@ class NewsCrudController extends CrudController
      */
     public function setup()
     {
-        CRUD::setModel(\App\Models\News::class);
-        CRUD::setRoute(config('backpack.base.route_prefix') . '/news');
-        CRUD::setEntityNameStrings('news', 'news');
+        CRUD::setModel(\App\Models\Instructors::class);
+        CRUD::setRoute(config('backpack.base.route_prefix') . '/instructors');
+        CRUD::setEntityNameStrings('instructors', 'instructors');
     }
 
     /**
@@ -82,11 +88,9 @@ class NewsCrudController extends CrudController
     {
         $this->crud->set('show.setFromDb', false);
         $this->crud->addColumns($this->getFieldsData(TRUE));
-
         /**
-         * Columns can be defined using the fluent syntax or array syntax:
+         * Columns can be defined using the fluent syntax:
          * - CRUD::column('price')->type('number');
-         * - CRUD::addColumn(['name' => 'price', 'type' => 'number']);
          */
     }
 
@@ -98,9 +102,10 @@ class NewsCrudController extends CrudController
      */
     protected function setupCreateOperation()
     {
-        CRUD::setValidation(NewsRequest::class);
+        CRUD::setValidation([]);
         CRUD::setFromDb(); // set fields from db columns.
         $this->crud->addFields($this->getFieldsData());
+
         /**
          * Fields can be defined using the fluent syntax:
          * - CRUD::field('price')->type('number');

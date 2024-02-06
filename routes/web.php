@@ -8,7 +8,9 @@ use App\http\Controllers\ProgramsController;
 use App\http\Controllers\NewsController;
 use App\http\Controllers\ProgramdataController;
 use App\http\Controllers\DepartmentsController;
-use App\http\Controllers\FacultyController;
+use App\http\Controllers\InstructorsController;
+use App\http\Controllers\CalenderController;
+use App\http\Controllers\ContactFormController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,11 +29,14 @@ Route::get('/programs', [ProgramsController::class,'index']);
 Route::get('/news', [NewsController::class,'index']);
 Route::get('/programdata', [ProgramdataController::class,'index']);
 Route::get('/departments', [DepartmentsController::class,'index']);
-Route::get('/faculty', [FacultyController::class,'index']);
+Route::get('/instructors', [InstructorsController::class,'index']);
+Route::get('/calender', [CalenderController::class,'index']);
 
-Route::get('languageSelection/{locale}',function ($locale) {
+Route::get('locale/{locale}',function ($locale) {
     if(in_array($locale,['ar','en'])){
         session()->put('locale',$locale);
     }
     return redirect()->back();
-})->name('languageSelection');
+})->name('locale');
+
+Route::post('/contact', [ContactFormController::class,'contactForm'])->name('contact.store');

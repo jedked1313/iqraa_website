@@ -14,7 +14,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -57,8 +57,12 @@
     <!-- End Header -->
     
     <!-- About Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl">
         <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">{{ __('about.about-collage') }}</h6>
+                <h1 class="mb-5">{{ __('about.collage-info')}}</h1>
+            </div>
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
                     <div class="position-relative h-100">
@@ -66,12 +70,11 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp text-center" data-wow-delay="0.3s">
-                    <h6 class="section-title bg-white text-center text-primary px-3">{{ __('about.about-collage') }}</h6>
-                    <h3 class="mb-4">{{ __('about.history') }}</h3>
-                    <p class="mb-4">{{ __('about.history-paragraph') }}</p>
+                    <h3>{{ __('about.history') }}</h3>
+                    <p class="mb-5">{{ __('about.history-paragraph') }}</p>
                 
-                    <h3 class="mb-4">{{ __('about.collage-message') }}</h3>
-                    <p class="mb-4">{{ __('about.collage-message-paragraph') }}</p>
+                    <h3>{{ __('about.collage-message') }}</h3>
+                    <p>{{ __('about.collage-message-paragraph') }}</p>
                 </div>
             </div>
         </div>
@@ -86,8 +89,8 @@
                 <h1 class="mb-5">{{ __('about.goals-s') }}</h1>
             </div>
             <div class="row g-4">
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-item text-center pt-3">
+                <div class="col-lg-3  col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="news-item h-100 text-center pt-3">
                         <div class="p-4">
                             <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
                             <p>{{ __('about.goals-1') }}</p>
@@ -95,7 +98,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-item text-center pt-3">
+                    <div class="news-item h-100 text-center pt-3">
                         <div class="p-4">
                             <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
                             <p>{{ __('about.goals-2') }}</p>
@@ -103,7 +106,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-item text-center pt-3">
+                    <div class="news-item h-100 text-center pt-3">
                         <div class="p-4">
                             <i class="fa fa-3x fa fa-users text-primary mb-4"></i>
                             <p>{{ __('about.goals-3') }}</p>
@@ -111,7 +114,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-item text-center pt-3">
+                    <div class="news-item h-100 text-center pt-3">
                         <div class="p-4">
                             <i class="fa fa-3x fa-globe text-primary mb-4"></i>
                             <p>{{ __('about.goals-4') }}</p>

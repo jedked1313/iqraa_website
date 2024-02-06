@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\News;
+use App\Models\Slider;
+use Illuminate\support\Facads\Storage;
+
 
 class IndexController extends Controller
 {
@@ -10,7 +14,10 @@ class IndexController extends Controller
 
     public function index() {
 
-        return view('index.index', []);
+        $news = News::all();
+        $news = $news->take(4);
+        $sliders = Slider::all();
+        return view('index.index', compact('news','sliders'));
     }
 
 }

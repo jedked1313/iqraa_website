@@ -136,7 +136,7 @@ $('.program-buttons').on('click', function () {
 
 // collage status
 $(window).scroll(function() {
-    if ($(window).scrollTop() > 2200 ) {
+    if ($(window).scrollTop() >= $("#status").offset().top) {
         $(window).off("scroll");
         $('.Count').each(function () {
             var $this = $(this);

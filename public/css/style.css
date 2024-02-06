@@ -1,8 +1,11 @@
-/********** Template CSS **********/
 :root {
     --primary: #06BBCC;
     --light: #F0FBFC;
     --dark: #181d38;
+}
+
+body,h1,h2,h3,h4,h5,h6{
+    font-family: "Rubik","Arial",sans-serif !important;
 }
 
 .fw-medium {
@@ -38,7 +41,7 @@
 
 /*** Button ***/
 .btn {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Rubik', "Rubik","Arial", sans-serif;
     font-weight: 600;
     transition: .5s;
 }
@@ -86,12 +89,13 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-    margin-right: 30px;
+    margin-right: 1.5rem;
     padding: 25px 0;
     color: #FFFFFF;
     font-size: 15px;
     text-transform: uppercase;
     outline: none;
+    text-wrap: nowrap;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -262,23 +266,26 @@
 }
 
 
-/*** Service ***/
-.service-item {
+/*** news ***/
+.news-item {
     background: var(--light);
     transition: .5s;
-    height: 100%;
 }
 
-.service-item:hover {
+.news-item:hover {
     transform: translate(5px ,-5px);
     background: var(--primary);
 }
 
 
-.service-item:hover * {
+.news-item:hover * {
     color: var(--light) !important;
 }
 
+.news-item:hover .btn{
+    background-color: var(--light);
+    color: var(--primary) !important;
+}
 
 /*** Categories & Courses ***/
 .category img,
@@ -295,6 +302,7 @@
 /*** Team ***/
 .team-item img {
     transition: .5s;
+    height: 12rem;
 }
 
 .team-item:hover img {
@@ -408,21 +416,13 @@
     display: block;
     margin-bottom: 5px;
     padding: 0;
-    text-align: left;
+    text-align: start;
     color: #FFFFFF;
     font-size: 15px;
     font-weight: normal;
     text-transform: capitalize;
     transition: .3s;
     width: 10rem;
-}
-
-.footer .btn.btn-link::before {
-    position: relative;
-    content: "\f105";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    margin-right: 10px;
 }
 
 .footer .btn.btn-link:hover {
@@ -451,8 +451,21 @@
     padding-right: 0;
     border-right: none;
 }
+/*** Main page ***/
+.news-cards{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    height: 75%;
+}
+.banner {
+    background: url(../img/carousel-2.jpg) fixed;
+    background-size: cover;
+    padding: 100px 100px
+}
 
-/* Departments page */
+/*** Departments page ***/
 .program-buttons{
     width: calc(24% - .30rem);
 }

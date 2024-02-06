@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
 
-class News extends Model
+class Slider extends Model
 {
     use CrudTrait;
     use HasFactory;
@@ -19,7 +19,7 @@ class News extends Model
     |--------------------------------------------------------------------------
     */
 
-    protected $table = 'news';
+    protected $table = 'sliders';
     // protected $primaryKey = 'id';
     // public $timestamps = false;
     protected $guarded = ['id'];
@@ -38,13 +38,12 @@ class News extends Model
             Storage::delete(Str::replaceFirst('storage/','public/', $obj->image));
         });
     }
-    
-    
+
     public function setImageAttribute($value)
     {
         $attribute_name = "image";
         $disk = "public";
-        $destination_path = "/news";
+        $destination_path = "/slider";
         if ($value==null) {
             // delete the image from disk
             Storage::delete(Str::replaceFirst('storage/','public/',$this->{$attribute_name}));
